@@ -1,0 +1,14 @@
+{
+  "name": "Velocity Test",
+  "title": "Velocity Test",
+  "homepage": "",
+  "version": "1.0.0",
+  "description": "1.0",
+  "main": "server.js",
+  "repository": "",
+  "author": "Jose Lora",
+  "dependencies": {
+     "express": "^4.9.5",
+     "express-session": "~1.0.0"
+  }
+}

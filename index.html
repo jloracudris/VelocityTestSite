@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html ng-app="app">
+
+	<head>
+		<title>Outlets App</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="bower_components/jquery/dist/jquery.js"></script>
+		<script src="bower_components/angular/angular.js"></script>
+		<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+		<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+
+		<link rel="stylesheet"; href="https://unpkg.com/ng-table@2.0.2/bundles/ng-table.min.css">
+		<script src="https://unpkg.com/ng-table@2.0.2/bundles/ng-table.min.js"></script>
+		
+		<script src="js/app.js"></script>
+		
+		<link rel="stylesheet" href="bower_components/adapt-strap/dist/adapt-strap.min.css"/>
+	</head>
+	<body ng-controller="outletsController">
+		<table ng-table="customConfigParams" class="table table-striped" show-filter="true">
+			<tr ng-repeat="contact in $data">
+				<td title="'Name'" filter="{ contactName: 'text'}" sortable="'contactName'">
+					{{contact.contactName}} </td>
+					
+				<td title="'Title'" filter="{ title: 'text'}" sortable="'title'">
+				{{contact.title}} </td>
+				
+				<td title="'Outlet Name'" filter="{ outletName: 'text'}" sortable="'outletName'">
+				{{contact.outletName}} </td>
+				
+				<td title="'Profile'" filter="{ profile: 'text'}" sortable="'profile'">
+				{{contact.profile}} </td>
+			</tr>
+		</table>
+	</body>
+</html>
