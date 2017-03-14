@@ -22,16 +22,16 @@
 	<body ng-controller="outletsController">
 		<table ng-table="customConfigParams" class="table table-striped" show-filter="true">
 			<tr ng-repeat="contact in $data">
-				<td title="'Name'" filter="{ contactName: 'text'}" sortable="'contactName'">
+				<td title="'Contact Name'" filter="{ contactName: 'text'}" sortable="'contactName'">
 					{{contact.contactName}} </td>
 					
-				<td title="'Title'" filter="{ title: 'text'}" sortable="'title'">
+				<td title="'Contact Title'" filter="{ title: 'text'}" sortable="'title'">
 				{{contact.title}} </td>
 				
 				<td title="'Outlet Name'" filter="{ outletName: 'text'}" sortable="'outletName'">
 				{{contact.outletName}} </td>
 				
-				<td title="'Profile'" filter="{ profile: 'text'}" sortable="'profile'">
+				<td title="'Contact Profile'" filter="{ profile: 'text'}" sortable="'profile'">
 				{{contact.profile}} </td>
 			</tr>
 		</table>
